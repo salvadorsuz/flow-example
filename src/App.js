@@ -1,4 +1,3 @@
-// @flow
 import React, { useState } from 'react';
 import './App.css';
 import MyButton from './components/MyButton';
@@ -14,7 +13,7 @@ const App = () => {
   return (
     <div>
       <h1>{count}</h1>
-      <MyButton name="Click Me" countFunc={countFunc} />
+      <MyButton countFunc={countFunc} />
     </div>
   );
   
