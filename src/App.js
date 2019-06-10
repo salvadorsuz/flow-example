@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import './App.css';
-import MyButton from './components/MyButton';
+import React, { useState } from "react";
+import "./App.css";
+import MyButton from "./components/MyButton";
 
 const App = () => {
-
-  const [ count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
   const countFunc = (inc: number) => {
-    setCount( count => count + inc);
-  }
+    setCount(count => count + inc);
+  };
 
   return (
     <div>
@@ -16,7 +15,6 @@ const App = () => {
       <MyButton countFunc={countFunc} />
     </div>
   );
-  
-}
+};
 
 export default App;
