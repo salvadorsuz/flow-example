@@ -1,7 +1,13 @@
+// @flow
 import React from 'react';
 
-const MyButton = ({ name, countFunc }) => (
-  <button type="button" onClick={() => countFunc()}>{name}</button>
+type Params = {
+  name: string,
+  countFunc: (count: number) => void
+};
+
+const MyButton = ({ name, countFunc }: Params) => (
+  <button type="button" onClick={() => countFunc(1)}>{name}</button>
 );
 
 export default MyButton;
